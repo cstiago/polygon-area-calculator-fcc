@@ -10,13 +10,13 @@ class Rectangle:
         self.height = height
     
     def get_area(self):
-        return 0
+        return (self.width * self.height)
     
     def get_perimeter(self):
-        return 0
+        return (2 * self.width + 2 * self.height)
     
     def get_diagonal(self):
-        return 0
+        return (self.width ** 2 + self.height ** 2) ** .5
     
     def get_picture(self):
         return 0

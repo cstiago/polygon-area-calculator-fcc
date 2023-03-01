@@ -23,7 +23,7 @@ class Rectangle:
             return 'Too big for picture.'
         else:
             picture = ['*' * self.width for i in range(self.height)]
-            return '\n'.join(picture)
+            return '\n'.join(picture) + '\n'
     
     def get_amount_inside(self, shape):
         amount = (self.width * self.height) // (shape.width * shape.height)

@@ -25,8 +25,9 @@ class Rectangle:
             picture = ['*' * self.width for i in range(self.height)]
             return '\n'.join(picture)
     
-    def get_amount_inside(self):
-        return 0
+    def get_amount_inside(self, shape):
+        amount = (self.width * self.height) // (shape.width * shape.height)
+        return amount
     
     def __str__(self):
         return f'Rectangle(width={self.width}, height={self.height})'

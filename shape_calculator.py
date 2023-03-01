@@ -3,11 +3,11 @@ class Rectangle:
         self.width = width
         self.height = height
     
-    def set_width(self):
-        return 0
+    def set_width(self, width):
+        self.width = width
     
-    def set_height(self):
-        return 0
+    def set_height(self, height):
+        self.height = height
     
     def get_area(self):
         return 0
@@ -25,6 +25,6 @@ class Rectangle:
         return 0
     
     def __str__(self):
-        return ''
+        return f'Rectangle(width={self.width}, height={self.height})'
 
 class Square(Rectangle):
